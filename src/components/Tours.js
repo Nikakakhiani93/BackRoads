@@ -1,15 +1,17 @@
 import React from 'react';
 import { Title } from './Title';
-import { tours } from '../data';
+import Tour from './Tour';
+
 function Tours() {
   return (
     <section className='section' id='tours'>
       <Title title='featured' subTitle='tours' />
+      <Tour />
 
-      <div className='section-center featured-center'>
+      {/* <div className='section-center featured-center'>
         {tours.map((tour) => {
           return (
-            <article className='tour-card'>
+            <article className='tour-card' key={tour.id}>
               <div className='tour-img-container'>
                 <img src={tour.image} className='tour-img' alt='' />
                 <p className='tour-date'>{tour.date}</p>
@@ -33,7 +35,7 @@ function Tours() {
             </article>
           );
         })}
-      </div>
+      </div> */}
     </section>
   );
 }
