@@ -6,7 +6,7 @@ import SocialLinks from './SocialLinks';
 function Footer() {
   return (
     <footer className='section footer'>
-      <PageLinks parentClass='footer-links' itemClass='footer-link' />
+      <PageLinks parentClass='footer-links' itemClass='footer-link' />;
       <ul className='footer-icons'>
         {socialLinks.map((link) => {
           return (
